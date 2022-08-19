@@ -64,14 +64,14 @@ void twos (int *p, int n)
     for(i=0; i<n; i++)
         printf("%d ",*(p+i));
 
-    //error ;
-    /*for(i=0; i<n; i++)
+    //error in index -2;
+    /*for(i=n-1; i>=0; i--)
     {
         res[i] = sum(*(p+i),0,carry_in);
         carry_in = carry(*(p+i),0,carry_in);
     }
 
-    for(i=n-1; i>=0; i--)
+    for(i=0; i<n; i++)
         printf("%d ",res[i]);*/
 }
 
