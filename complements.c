@@ -39,10 +39,9 @@ int carry(int logic_1, int logic_2,int carry_in)
     return or(or(and(logic_1,logic_2),and(logic_2,carry_in)),and(logic_1,carry_in));
 }
 
-int * ones (int a[], int n)
+void ones (int a[], int n)
 {
     int res[16], i;
-    int *p = res;
 
     printf("\nOne's Complement = ");
     for(i=0; i<n; i++)
@@ -51,28 +50,23 @@ int * ones (int a[], int n)
         printf("%d ",res[i]);
     }
 
-    return p;
+   twos(res,n);
 }
 
-void twos (int *p, int n)
+void twos (int arr[], int n)
 {
     int res[16], i, carry_in = 1;
 
     printf("\nTwo's Complement = ");
 
-    //check for pointer
-    for(i=0; i<n; i++)
-        printf("%d ",*(p+i));
-
-    //error in index -2;
-    /*for(i=n-1; i>=0; i--)
+    for(i=n-1; i>=0; i--)
     {
-        res[i] = sum(*(p+i),0,carry_in);
-        carry_in = carry(*(p+i),0,carry_in);
+        res[i] = sum(arr[i],0,carry_in);
+        carry_in = carry(arr[i],0,carry_in);
     }
 
     for(i=0; i<n; i++)
-        printf("%d ",res[i]);*/
+        printf("%d ",res[i]);
 }
 
 int main()
@@ -87,8 +81,7 @@ int main()
     for(i=0; i<n; i++)
         scanf("%d",&a[i]);
 
-    p = ones(a,n);
-    twos(p, n);
+    ones(a,n);
 
     return 0;
 }
