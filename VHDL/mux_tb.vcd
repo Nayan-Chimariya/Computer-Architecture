@@ -1,0 +1,59 @@
+$date
+  Wed Sep 21 15:42:28 2022
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 1 # c $end
+$var reg 1 $ d $end
+$var reg 1 % s0 $end
+$var reg 1 & s1 $end
+$var reg 1 ' res $end
+$scope module full_adder $end
+$var reg 1 ( a $end
+$var reg 1 ) b $end
+$var reg 1 * c $end
+$var reg 1 + d $end
+$var reg 1 , s0 $end
+$var reg 1 - s1 $end
+$var reg 1 . res $end
+$upscope $end
+$enddefinitions $end
+#0
+1!
+0"
+1#
+0$
+0%
+0&
+1'
+1(
+0)
+1*
+0+
+0,
+0-
+1.
+#1000000
+1&
+0'
+1-
+0.
+#2000000
+1%
+0&
+1'
+1,
+0-
+1.
+#3000000
+1&
+0'
+1-
+0.
+#4000000
